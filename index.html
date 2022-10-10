@@ -17,11 +17,15 @@
         padding-bottom: 0.3rem;
         border-radius: 10px;
     }    
-    [type="checkbox"].filled-in:checked + span:not(.lever):after{
+    [type="checkbox"].filled-in:checked + span:not(.lever)::after{
         border-bottom:2px solid #d8a310;
         border:2px solid #d8a310;
         background-color:#f3c259c0;
+        border-radius: 5px;
         
+    }
+    u{
+        color:#d8a310;
     }
     button.btn-large{
     height: 100px;
@@ -38,20 +42,20 @@
         border-radius: 15px;
     }
     input#nombre.validate{
-        border-bottom:2px solid #d8a310;
+        border-bottom:1px solid #fcce4f;
         color:black;
     }
     input#apellido.validate{
-        border-bottom:2px solid #d8a310;
+        border-bottom:1px solid #fcce4f;
     }
     input#email.validate{
-        border-bottom:2px solid #d8a310;
+        border-bottom:1px solid #fcce4f;
     }
     input#teléfono.validate{
-        border-bottom:2px solid #d8a310;
+        border-bottom:1px solid #fcce4f;
     }
     input#ruc.validate{
-        border-bottom:2px solid #d8a310;
+        border-bottom:1px solid #fcce4f;
     }
    b{
        color:#0e0e0e;
@@ -91,12 +95,12 @@
         <div class="row input-field col l8">
         <label>
         <input type="checkbox" class="filled-in">
-        <span><b>Aceptar</b></span><u class="amber-text accent-3-text"> términos y condiciones</u>
+        <span><b>Aceptar</b></span><u class="u"> términos y condiciones</u>
         </label>
         <br>
         <br>
         <br>
-        <button class="btn-large amber" type="submit"><span class="black-text"><b class="b1">CONTáCTANOS</b></span></button>                
+        <button class="btn-large amber lighten-1" type="submit"><span class="black-text"><b class="b1">CONTáCTANOS</b></span></button>                
         </div> 
         </div> 
                        
