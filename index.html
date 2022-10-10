@@ -8,59 +8,106 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+    <style>
+        body{
+            background-color: gray;
+        }
+    .section{
+        padding-top:0.3rem;
+        padding-bottom: 0.3rem;
+        border-radius: 10px;
+    }    
+    [type="checkbox"].filled-in:checked + span:not(.lever):after{
+        border-bottom:2px solid #d8a310;
+        border:2px solid #d8a310;
+        background-color:#f3c259c0;
+        
+    }
+    button.btn-large{
+    height: 100px;
+    width: 400px;
+    line-height: 5px;
+    font-size: 30px;
+    padding: 20px;
+    margin:30px;
+    border-radius: 3px;
+    }
+    div.row.card-panel{
+        padding: 0px;
+        margin: -0.8rem;
+        border-radius: 15px;
+    }
+    input#nombre.validate{
+        border-bottom:2px solid #d8a310;
+        color:black;
+    }
+    input#apellido.validate{
+        border-bottom:2px solid #d8a310;
+    }
+    input#email.validate{
+        border-bottom:2px solid #d8a310;
+    }
+    input#teléfono.validate{
+        border-bottom:2px solid #d8a310;
+    }
+    input#ruc.validate{
+        border-bottom:2px solid #d8a310;
+    }
+   b{
+       color:#0e0e0e;
+       
+    }
+    h2{
+        margin:20px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:40px;
+    }
+    h3{
+      color:whitesmoke;
+      font-size: 30px;  
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin:2rem;
+      line-height:50%;
+    }
+  
+</style>
     <title>Digital F2F</title>
 </head>
 <body>
-               <div class="container black l12">
-                <br>
-                   <h3 class="aling right white-text ">x</h3>
-                       
-                   <h1 class="container white-text  "><b>CONTÁCTANOS</b></h1>
-                   <br>
-                </div>
-
-        <div class="container ">
+    <div class=" section container black">     
+     <h3 class="aling right white-text ">x</h3> <h2 class="white-text"> CONTÁCTANOS</h2>              
+    </div>
+        <div class="section container ">
             <div class="row">
-               
-                <form class="col l12">
-                        <div class="row input-field col l6">
-                            <input type="text" placeholder="Nombre" id="nombre" class="validate" required>
-                            
-                         <input type="text" placeholder="Apellido" id="apellido" class="validate" required>
-                            
-                      <input type="text" placeholder="Email" id="email" class="validate" required>
-                       
-                  <input type="text" placeholder="Teléfono (+519...)" id="teléfono" class="validate" required>
-                                
-              <input type="number" placeholder="RUC" id="ruc" class="validate" required>
+            <form class="col l12">
+            <div class="row card-panel">
+             <div class="input-field col l6">
+                    <input type="text" placeholder="   Nombre" id="nombre" class="validate" required>
+                    <input type="text" placeholder="   Apellido" id="apellido" class="validate" required>
+                    <input type="text" placeholder="   Email" id="email" class="validate" required>
+                    <input type="text" placeholder="   Teléfono (+519...)" id="teléfono" class="validate" required>
+                    <input type="number" placeholder="   RUC" id="ruc" class="validate" required>
                              
-                                                     
-                         <div class="row input-field col l8">
-                            <input  type="checkbox"  name="checkbox">
-                            <span><b>Aceptar</b></span><u class="orange-text"> términos y condiciones</u>
-                               </label> 
-                               <br>
-                               <br>
-                               <br>
-                               <button class="col l10 btn yellow" type="submit"><span class="black-text"><b>CONTáCTANOS</b></span></button>                
-                         </div> 
-                       
-                        
-                        </div>  
-                       
-                            <div class="row">
-                               <img class="aling right col l5"  src="../prueba-tecnica/img-challenge.png" alt="img" >
-                            </div>    
-                                    
-                   
-         
-            </div>    
+        <div class="row input-field col l8">
+        <label>
+        <input type="checkbox" class="filled-in">
+        <span><b>Aceptar</b></span><u class="amber-text accent-3-text"> términos y condiciones</u>
+        </label>
+        <br>
+        <br>
+        <br>
+        <button class="btn-large amber" type="submit"><span class="black-text"><b class="b1">CONTáCTANOS</b></span></button>                
         </div> 
-                </form> 
+        </div> 
+                       
+ <div class="row">
+  <img class="aling right col l5"  src="../prueba-tecnica/img-challenge.png" alt="img" >
+ </div>    
+ </div>
+ </div>    
+</div> 
+</form> 
                                   
-       
-      
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
 </body>
 </html>
